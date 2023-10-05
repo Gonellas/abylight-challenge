@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 216893896}
   - component: {fileID: 216893900}
   - component: {fileID: 216893899}
+  - component: {fileID: 216893901}
   - component: {fileID: 216893898}
-  - component: {fileID: 216893897}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -164,20 +164,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -92}
   m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &216893897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216893895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59c7de59d00e89b47a6b437b6dfce20f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outputText: {fileID: 1809103481}
-  csvURL: https://www.docs.google.com/spreadsheets/d/1rVrNGJ8ZATl9vFnmHZEY6t7cl-hkmu8z3HHhf9bD00U/export?format=csv
 --- !u!114 &216893898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +246,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216893895}
   m_CullTransparentMesh: 1
+--- !u!114 &216893901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216893895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c7de59d00e89b47a6b437b6dfce20f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 1809103481}
+  url: https://docs.google.com/spreadsheets/d/1rVrNGJ8ZATl9vFnmHZEY6t7cl-hkmu8z3HHhf9bD00U/export?format=csv
 --- !u!1 &542642130
 GameObject:
   m_ObjectHideFlags: 0
